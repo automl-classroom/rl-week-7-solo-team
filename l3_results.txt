@@ -1,0 +1,5 @@
+I did not fully investigate all the hyperparameters that are possible with this approach, but I explored some of them. Namely, I was able to see that for the start steps, we're just collecting information randomly without the UCB guideline. We can immediately see when UCB starts to have an impact because at this point the agent becomes worse for a while until it has learned enough about the objective to make progress again. I still see a slower learning curve compared to the normal R&D learning, which might be due to a misconfiguration in the hyperparameters.
+
+When I tuned the phi value, I could immediately see how this changed how long the agent was prioritizing exploration and how soon the point came at which it started to exploit its gained knowledge. 
+
+Overall, I found that this was an interesting paper to read and understand, and there was a lot to learn from. 
